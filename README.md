@@ -21,6 +21,11 @@ docker run -itd --name py3spark-cont py3spark # Create a container with the abov
 Then whenever you want to play with Pyspark, just access your environment with
 ```bash
 docker exec -it py3spark-cont /bin/bash
+```
+
+Output:
+```bash
+akki:~ docker exec -it py3spark-cont /bin/bash
 root@xxxxxxxxx:/usr/src/app#
 ```
 
@@ -29,7 +34,12 @@ root@xxxxxxxxx:/usr/src/app#
 For a quick start, you can use the minimalistic Pyspark script `run.py` included in this repo. Once you have your environment (with the `docker exec` command above), run
 
 ```bash
-root@7116e1bca219:/usr/src/app# spark-submit run.py
+spark-submit run.py
+```
+
+Output:
+```
+root@xxxxxxxxx:/usr/src/app# spark-submit run.py
 2019-03-02 09:47:20 WARN  NativeCodeLoader:62 - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
 2019-03-02 09:47:20 INFO  SparkContext:54 - Running Spark version 2.3.2
 2019-03-02 09:47:20 INFO  SparkContext:54 - Submitted application: run.py
