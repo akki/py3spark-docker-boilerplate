@@ -14,7 +14,7 @@ Contributions are welcome but for me the above two points are the primary focus.
 
 The build requires running the following commands (assuming you have [Docker](https://docs.docker.com/v17.12/install/) installed):
 ```bash
-docker build -t py3spark . # Build docker image
+docker pull akkidx/py3spark:0.1
 docker run -itd --name py3spark-cont py3spark # Create a container with the above image
 ```
 

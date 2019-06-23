@@ -2,7 +2,7 @@
 
 FROM python:3.6
 
-ENV SPARK_VERSION 2.3.2
+ENV SPARK_VERSION 2.3.3
 ENV HADOOP_VERSION 2.7
 
 RUN apt-get -y update && \
